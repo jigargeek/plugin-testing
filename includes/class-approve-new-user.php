@@ -64,7 +64,6 @@ class ANUIWP_Approve_New_User_Main {
 	 */
 	public function user_list() {
 		$plugin_user_list = new ANUIWP_User_List( $this->settings );
-	// add_action('init', 'test_fun');
 
 		// Actions
 		$this->loader->add_action( 'load-users.php', $plugin_user_list, 'update_action' );
